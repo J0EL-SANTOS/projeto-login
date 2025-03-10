@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{  
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+body,html{
+    background-color: rgb(107, 107, 107);
+    height: 100vh;
+    width: 100vw;
+}
+section{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+
+    transition: width .2s, height 2s;
+    transition-timing-function: ease;
+}
+#imagem{
+    display: block;
+    background: url(../imagem/pexels-philippedonn-1257860.jpg);
+    height: 200px;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+p{
+    padding: 10px;
+    text-indent: 20px;
+    font-size: .9em;
+}
+
+form{
+    padding: 0px 10px;
+}
+
+div#campo {
+    background-color: rgb(58, 21, 126);
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 5px auto; /* Centraliza */
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+div#campo i {
+    font-size: 1.5em;
+    margin: 0 10px; /* Espaçamento entre ícone e input */
+}
+
+div#campo input {
+    background-color: aqua;
+    font-size: 1em;
+    height: 40px;  
+    width: 100%; /* Ocupa toda a largura disponível */
+    border-radius: 5px;
+    padding-left: 10px;
+}
+div#campo > input:focus-within{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+div > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(26, 121, 89);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+div > input[type=submit]:hover{
+    background-color: rgb(21, 59, 47);
+}
+
+div > a{
+    display: block;
+    font-size: 1em;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color:rgb(21, 59, 47);
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid rgb(21, 59, 47);
+}
+
+div > a:hover{
+    background-color: rgb(21, 59, 47);
+    color: aliceblue;
+}
